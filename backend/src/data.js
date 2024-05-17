@@ -78,4 +78,24 @@ export const sample_foods = [
     { name: 'Fry', count: 1 },
     { name: 'Soup', count: 1 },
   ];
-  
+
+
+  //sample users 
+  export const sample_users = [
+    {
+      id: '1',
+      name: 'Him',
+      email: 'him@gmail.com',
+      password: 'him',
+      address: 'Lucknow',
+      isAdmin: false,
+    },
+    {
+      id: '2',
+      name: 'Himanshu',
+      email: 'himanshu@gmail.com',
+      password: 'himanshu',
+      address: 'Kanpur',
+      isAdmin: true,
+    }
+  ];

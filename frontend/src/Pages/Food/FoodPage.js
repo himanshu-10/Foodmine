@@ -9,6 +9,7 @@ import Tags from "../../components/Tags/Tags";
 import Price from "../../components/Price/Price";
 import { useCart } from "../../hooks/useCart";
 import NotFound from "../../components/NotFound/NotFound";
+import { toast } from "react-toastify";
 export default function FoodPage() {
   const [food, setFood] = useState({});
   const { id } = useParams();
@@ -21,6 +22,7 @@ export default function FoodPage() {
     // navigate('/cart');
     addToCart(food);
     // const notify = () => toast("Wow so easy!");
+    toast.success('Item added successfully');
     navigate('/cart');
 
   }
